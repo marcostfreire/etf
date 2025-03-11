@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1741614217.25069 "c:/Users/Marcos/Documents/VS Code/etf/a.tex" "a.pdf" "a" 1741614218.05133 0
+["pdflatex"] 1741636139.31001 "c:/Users/Marcos/Documents/VS Code/etf/article-curva-di.tex" "article-curva-di.pdf" "article-curva-di" 1741636140.12476 0
   "C:/Users/Marcos/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1738190513 143715 15def80d94da65965abcd3736ee0043d ""
   "C:/Users/Marcos/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1737352577 12013877 b8a4f17cf0c44ebf20c2abce65a0600c ""
   "C:/Users/Marcos/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc" 1256929440 2327 9d6df24f9c4f7368395224341a95523a ""
@@ -55,12 +55,12 @@
   "C:/Users/Marcos/AppData/Local/Programs/MiKTeX/tex/latex/lm/ot1lmr.fd" 1430474546 1882 28c08db1407ebff35a658fd141753d16 ""
   "C:/Users/Marcos/AppData/Local/Programs/MiKTeX/tex/latex/lm/ts1lmr.fd" 1430474546 1914 884882d7ebb0fd65cea93fca77ff6f5a ""
   "C:/Users/Marcos/AppData/Local/Programs/MiKTeX/tex/latex/tools/indentfirst.sty" 1730400552 1618 d81d7e8646081fd4049b99a8cd8a91df ""
-  "a.aux" 1741614217 1558 f106b8e823706522c436025ece44ee2b "pdflatex"
-  "a.tex" 1741614215 38033 9bcb39e8924bd7bf2d9f5758a86bdf64 ""
-  "c:/Users/Marcos/Documents/VS Code/etf/a.tex" 1741614215 38033 9bcb39e8924bd7bf2d9f5758a86bdf64 ""
+  "article-curva-di.aux" 1741636139 1558 f106b8e823706522c436025ece44ee2b "pdflatex"
+  "article-curva-di.tex" 1741614215 38033 9bcb39e8924bd7bf2d9f5758a86bdf64 ""
+  "c:/Users/Marcos/Documents/VS Code/etf/article-curva-di.tex" 1741614215 38033 9bcb39e8924bd7bf2d9f5758a86bdf64 ""
   "image.png" 1741614020 133247 456eb0f7cb8e23afb4ed81a56f4acb3e ""
   (generated)
-  "a.aux"
-  "a.log"
-  "a.pdf"
+  "article-curva-di.aux"
+  "article-curva-di.log"
+  "article-curva-di.pdf"
   (rewritten before read)

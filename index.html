@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investo Fintech Brasil ETF</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         * {
@@ -31,11 +32,34 @@
         }
 
         section {
-            padding: 60px 0;
+            padding: 30px 0;
             text-align: center;
         }
 
-        h1, h2, h3 {
+        .section-light {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .section-dark {
+            background-color: #2c3e50;
+            color: #fff;
+        }
+
+        .section-dark h1,
+        .section-dark h2,
+        .section-dark h3,
+        .section-dark a {
+            color: #fff;
+        }
+
+        .section-dark a:hover {
+            color: #3498db;
+        }
+
+        h1,
+        h2,
+        h3 {
             color: #2c3e50;
             margin-bottom: 20px;
         }
@@ -113,7 +137,7 @@
         }
 
         .main-content p {
-            margin-bottom: 20px; /* Espaçamento entre parágrafos */
+            margin-bottom: 20px;
         }
 
         .sidebar {
@@ -135,18 +159,32 @@
 
         .chart-container {
             width: 100%;
-            max-width: 300px; /* Padrão pro pie chart */
+            max-width: 300px;
             aspect-ratio: 4 / 3;
             margin: 0 auto;
         }
 
+        .charts .chart-container {
+            flex: 1;
+            max-width: none;
+        }
+
         .chart-container.large-chart {
-            max-width: 500px; /* Aumentado pros outros gráficos */
+            max-width: 650px;
+        }
+
+        .chart-container.pie-chart {
+            width: 337.5px;
+            max-width: 337.5px;
+            height: auto;
+            aspect-ratio: 1 / 1;
         }
 
         canvas {
             width: 100% !important;
             height: auto !important;
+            background-color: transparent;
+            /* Alterado de #fff para transparente */
         }
 
         .logos {
@@ -173,7 +211,8 @@
             font-size: 16px;
         }
 
-        th, td {
+        th,
+        td {
             padding: 12px 15px;
             text-align: left;
             border-bottom: 1px solid #ddd;
@@ -188,39 +227,62 @@
             background-color: #f9f9f9;
         }
 
+        .section-dark table {
+            color: #fff;
+        }
+
+        .section-dark thead tr {
+            background-color: #34495e;
+            color: #fff;
+        }
+
+        .section-dark tbody tr:hover {
+            background-color: #3a506b;
+        }
+
         @media (max-width: 768px) {
             .hero-content h1 {
                 font-size: 32px;
             }
+
             .hero-content p {
                 font-size: 18px;
             }
+
             section {
-                padding: 40px 0;
+                padding: 20px 0;
             }
+
             .content-grid {
                 grid-template-columns: 1fr;
             }
+
             .sidebar {
                 margin-top: 20px;
             }
+
             .charts {
                 flex-direction: column;
                 align-items: center;
             }
+
             .chart-container {
                 max-width: 100%;
                 aspect-ratio: 16 / 9;
             }
+
             table {
                 font-size: 14px;
             }
-            th, td {
+
+            th,
+            td {
                 padding: 10px;
             }
         }
     </style>
 </head>
+
 <body>
     <div id="root"></div>
 
@@ -230,7 +292,7 @@
                 <section id="hero">
                     <div className="hero-content animate-fadeInUp">
                         <h1>Invista na Revolução Fintech Brasileira</h1>
-                        <p>Aproveite o crescimento do maior hub de fintechs da América Latina com o Investo Fintech Brasil ETF.</p>
+                        <p>Aproveite o crescimento desse setor que maior hub de fintechs da América Latina com o Investo Fintech Brasil ETF.</p>
                         <button onClick={() => scrollToSection('market-opportunity')}>Descubra Mais</button>
                     </div>
                 </section>
@@ -239,7 +301,7 @@
 
         function MarketOpportunity() {
             return (
-                <section id="market-opportunity" className="animate-fadeInUp">
+                <section id="market-opportunity" className="section-light animate-fadeInUp">
                     <div className="container">
                         <h2>O Brasil: Líder em Fintechs na América Latina</h2>
                         <div className="content-grid">
@@ -266,10 +328,10 @@
 
         function ETFComposition() {
             return (
-                <section id="etf-composition" className="animate-fadeInUp">
+                <section id="etf-composition" className="section-dark animate-fadeInUp">
                     <div className="container">
                         <h2>Carteira com as Líderes em Fintech</h2>
-                        <p>O Investo Fintech Brasil ETF reúne as empresas mais inovadoras e líquidas do setor, com foco em <strong>liquidez, tecnologia e valuations adequados</strong>. Veja algumas delas:</p>
+                        <p>O Fintech Brasil ETF reúne as empresas mais inovadoras e líquidas do setor, com foco em <strong>liquidez, tecnologia e valuations adequados</strong>. Veja algumas delas:</p>
                         <ul style={{ listStyle: 'none', padding: 0, maxWidth: 800, margin: '0 auto', textAlign: 'left' }}>
                             <li><strong>Nubank (NU/NUBR33):</strong> Banco digital com mais de <strong>100 milhões de clientes</strong>, 3º maior banco do Brasil, lucrativo em 2023 (<a href="https://diariodonordeste.verdesmares.com.br/negocios/nubank-ultrapassa-numero-de-clientes-do-itau-e-se-torna-o-3-maior-banco-do-brasil-diz-banco-central-1.3609528">Diário do Nordeste</a>).</li>
                             <li><strong>PagSeguro (PAGS/PAGS34):</strong> Líder em pagamentos digitais e banking para PMEs, rentável e diversificada (<a href="https://finsidersbrasil.com.br/reportagem-exclusiva-fintechs/sete-de-oito-fintechs-brasileiras-registram-lucro-no-primeiro-semestre/">Finsiders</a>).</li>
@@ -277,17 +339,12 @@
                         </ul>
                         <p>A metodologia foca em <strong>liquidez</strong> (alto volume diário), <strong>tamanho</strong> (valor de mercado acima de US$ 500 milhões) e <strong>foco fintech</strong>, com rebalanceamento semestral.</p>
                         <div className="charts">
-                            <div className="chart-container">
+                            <div className="chart-container pie-chart">
                                 <canvas id="sector-pie-chart"></canvas>
-                            </div>
-                            <div className="logos">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Nubank_logo.svg" alt="Nubank" title="Nubank: 100M+ clientes" />
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/PagSeguro_logo.svg" alt="PagSeguro" title="PagSeguro: Líder em pagamentos" />
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Stone_Logo.svg" alt="StoneCo" title="StoneCo: Adquirência e software" />
                             </div>
                         </div>
                         <h3>Empresas por Setor</h3>
-                        <p>Abaixo está a divisão das empresas provavelmente incluídas em cada setor do ETF:</p>
+                        <p>Abaixo está a composição de algumas empresas candidatas a serem incluídas no ETF:</p>
                         <table>
                             <thead>
                                 <tr>
@@ -349,7 +406,7 @@
 
         function FinancialViability() {
             return (
-                <section id="financial-viability" className="animate-fadeInUp">
+                <section id="financial-viability" className="section-light animate-fadeInUp">
                     <div className="container">
                         <h2>Potencial de Crescimento Explosivo</h2>
                         <p>O ETF Fintech Brasil captura o crescimento do setor, com captação inicial estimada entre <strong>R$ 50 e R$ 100 milhões</strong>, viável pelo histórico da Investo (R$ 200M em 12 ETFs em 1 ano) (<a href="https://startups.com.br/negocios/investo-capta-r-40-milhoes-para-popularizar-etfs-no-brasil/">Startups</a>). O setor fintech brasileiro crescerá a um <strong>CAGR de ~15% até 2028</strong>, 3x mais rápido que bancos tradicionais, com receitas globais projetadas em <strong>US$ 1,5 trilhão até 2030</strong> (<a href="https://www.mckinsey.com.br/our-insights/all-insights/fintechs-deverao-crescer-dois-digitos-ao-ano-ate-2028">McKinsey</a>).</p>
@@ -361,10 +418,10 @@
                                 <canvas id="market-growth-chart"></canvas>
                             </div>
                         </div>
-                        <p style={{textAlign: 'left', marginTop: '10px'}}>
-                            <strong>Explicação do Gráfico de Desempenho:</strong> Este gráfico compara o desempenho hipotético do ETF Fintech Brasil com o Ibovespa desde 2018. Para o ETF, assumimos um crescimento anualizado de 15%, baseado no potencial de crescimento do setor fintech (projetado por fontes como McKinsey). Isso significa que, começando em 100 em 2018, o valor cresce 15% ao ano (ex.: 100 × 1,15 = 115 em 2019, 115 × 1,15 = 132,25 em 2020, e assim por diante). Para o Ibovespa, usamos dados históricos reais aproximados. Ambos os valores foram normalizados para 100 em 2018 para facilitar a comparação visual.
+                        <p style={{ textAlign: 'left', marginTop: '10px' }}>
+                            <strong>Desempenho:</strong> Este gráfico compara o desempenho hipotético do ETF Fintech Brasil com o Ibovespa desde 2018. Para o ETF, assumimos um crescimento anualizado de 15%, baseado no potencial de crescimento do setor fintech (projetado por fontes como McKinsey). Isso significa que, começando em 100 em 2018, o valor cresce 15% ao ano (ex.: 100 × 1,15 = 115 em 2019, 115 × 1,15 = 132,25 em 2020, e assim por diante). Para o Ibovespa, usamos dados históricos reais aproximados. Os valores foram normalizados para 100 em 2018 em favor da comparação visual.
                         </p>
-                        <p style={{textAlign: 'left', marginTop: '10px'}}>
+                        <p style={{ textAlign: 'left', marginTop: '10px' }}>
                             <strong>Explicação do Gráfico de Crescimento:</strong> Este gráfico projeta a receita global do setor fintech de 2023 a 2030, com base em um CAGR (taxa de crescimento anual composta) de ~15%, conforme estudo da McKinsey. Começando em US$ 0,32 trilhão em 2023, a receita cresce anualmente (ex.: 0,32 × 1,15 = 0,368 em 2024, 0,368 × 1,15 = 0,423 em 2025, etc.), atingindo US$ 1,5 trilhão em 2030. Os valores são estimativas baseadas em tendências atuais e podem variar.
                         </p>
                     </div>
@@ -386,7 +443,7 @@
 
         function Footer() {
             return (
-                <footer>
+                <footer className="section-light">
                     <div className="container">
                         <p><strong>Referências:</strong> <a href="https://www.anbima.com.br">ANBIMA</a>, <a href="https://epocanegocios.globo.com">Época Negócios</a>, <a href="https://startups.com.br">Startups</a>, <a href="https://finsidersbrasil.com.br">Finsiders</a>, <a href="https://www.mckinsey.com.br">McKinsey</a>.</p>
                         <p><strong>Disclaimer:</strong> Investimentos envolvem riscos. Resultados passados não garantem ganhos futuros.</p>
@@ -456,7 +513,17 @@
                         backgroundColor: ['#3498db', '#2ecc71', '#e67e22', '#9b59b6']
                     }]
                 },
-                options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                fontColor: 'white' // Cor da legenda alterada para branco
+                            }
+                        }
+                    }
+                }
             });
 
             const performanceCtx = document.getElementById('performance-chart').getContext('2d');
@@ -490,4 +557,5 @@
         };
     </script>
 </body>
+
 </html>

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.20)  10 MAR 2025 10:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.20)  10 MAR 2025 16:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Marcos/Documents/VS Code/etf/a.tex"
-(c:/Users/Marcos/Documents/VS Code/etf/a.tex
+**"c:/Users/Marcos/Documents/VS Code/etf/article-curva-di.tex"
+(c:/Users/Marcos/Documents/VS Code/etf/article-curva-di.tex
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
 (C:\Users\Marcos\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -131,8 +131,8 @@ File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count277
 \l__pdf_internal_box=\box54
-) (a.aux)
-\openout1 = `a.aux'.
+) (article-curva-di.aux)
+\openout1 = `article-curva-di.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
 LaTeX Font Info:    ... okay on input line 10.
@@ -297,7 +297,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--135
 
 
 
-[15] (a.aux)
+[15] (article-curva-di.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
@@ -305,14 +305,14 @@ L3 programming layer <2024-12-25>
  ) 
 Here is how much of TeX's memory you used:
  3025 strings out of 473536
- 55662 string characters out of 5714472
- 444727 words of memory out of 5000000
+ 55857 string characters out of 5714472
+ 444742 words of memory out of 5000000
  26228 multiletter control sequences out of 15000+600000
  603274 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,8n,65p,1793b,304s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,8n,65p,1808b,304s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Marcos/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Marcos/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Marcos/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Marcos/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Marcos/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Marcos/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb>
-Output written on a.pdf (15 pages, 309140 bytes).
+Output written on article-curva-di.pdf (15 pages, 309140 bytes).
 PDF statistics:
  89 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
