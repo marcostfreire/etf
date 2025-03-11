@@ -184,7 +184,6 @@
             width: 100% !important;
             height: auto !important;
             background-color: transparent;
-            /* Alterado de #fff para transparente */
         }
 
         .logos {
@@ -308,6 +307,7 @@
                             <div className="main-content">
                                 <p>O Brasil abriga entre <strong>31% e 40% das fintechs da América Latina</strong>, com cerca de <strong>1.500 empresas ativas em 2023</strong>, sendo o <strong>1º na região e 7º no mundo</strong> em número de fintechs, segundo a <a href="https://www.anbima.com.br/es_es/institucional/publicacoes/o-novo-cenario-das-fintechs-em-2024-de-olho-nos-mercados-b2b.htm">ANBIMA</a> e a <a href="https://epocanegocios.globo.com/startups/noticia/2024/07/fintechs-brasileiras-atrairam-quase-r-60-bi-em-investimentos-em-10-anos-diz-estudo-sobre-as-startups-que-desafiam-os-bancos.ghtml">Época Negócios</a>. Esse ecossistema atraiu <strong>US$ 10,4 bilhões (R$ 59 bilhões)</strong> em investimentos entre 2014 e 2023, ou <strong>66% dos aportes em fintechs na LatAm</strong>, conforme a <a href="https://startups.com.br/negocios/fintech/fintechs-brasileiras-receberam-66-dos-aportes-de-latam-em-10-anos/">Startups</a>.</p>
                                 <p>Inovações como o <strong>Pix</strong>, com <strong>42 bilhões de transações em 2023</strong> (crescimento de 75% em relação a 2022) e representando <strong>39% dos pagamentos no país</strong>, e o <strong>Open Finance</strong> estão revolucionando o setor financeiro, segundo a <a href="https://portal.febraban.org.br/noticia/4071/pt-br/">FEBRABAN</a> e o <a href="https://finsidersbrasil.com.br/estudos-e-relatorios/pix-encosta-nos-cartoes-e-bate-39-dos-pagamentos-em-2023-diz-bc/">Finsiders</a>. A regulação do Banco Central elevou a bancarização de <strong>57% para 86% da população</strong>, incluindo <strong>75 milhões de brasileiros</strong>, conforme a <a href="https://a16z.com/pt/fintechs-brasil/">Andreessen Horowitz</a>.</p>
+                                <p>O setor está migrando de modelos B2C para B2B, com <strong>56% das fintechs focadas em empresas</strong>, buscando maior rentabilidade. Áreas como pagamentos digitais, crédito online, bancos digitais e infraestrutura tecnológica lideram a inovação, enquanto tendências globais como "embedded finance" e Open Finance ganham força no Brasil.</p>
                                 <div className="charts">
                                     <div className="chart-container large-chart">
                                         <canvas id="fintechs-chart"></canvas>
@@ -336,15 +336,19 @@
                             <li><strong>Nubank (NU/NUBR33):</strong> Banco digital com mais de <strong>100 milhões de clientes</strong>, 3º maior banco do Brasil, lucrativo em 2023 (<a href="https://diariodonordeste.verdesmares.com.br/negocios/nubank-ultrapassa-numero-de-clientes-do-itau-e-se-torna-o-3-maior-banco-do-brasil-diz-banco-central-1.3609528">Diário do Nordeste</a>).</li>
                             <li><strong>PagSeguro (PAGS/PAGS34):</strong> Líder em pagamentos digitais e banking para PMEs, rentável e diversificada (<a href="https://finsidersbrasil.com.br/reportagem-exclusiva-fintechs/sete-de-oito-fintechs-brasileiras-registram-lucro-no-primeiro-semestre/">Finsiders</a>).</li>
                             <li><strong>StoneCo (STNE/STOC34):</strong> Gigante em adquirência e software, lucrativa e apoiada por Warren Buffett (<a href="https://www.popularfintech.com/p/top-brazilian-fintech-companies-trading">Popular Fintech</a>).</li>
+                            <li><strong>Banco Inter (BIDI11):</strong> Banco digital com mais de <strong>25 milhões de clientes</strong>, oferecendo conta grátis, crédito e investimentos.</li>
+                            <li><strong>XP Inc (XPBR31):</strong> Plataforma líder de investimentos com mais de <strong>R$ 1 trilhão sob custódia</strong>.</li>
+                            <li><strong>MercadoLibre (MELI34):</strong> Maior plataforma de e-commerce da AL, com forte presença fintech via Mercado Pago.</li>
                         </ul>
-                        <p>A metodologia foca em <strong>liquidez</strong> (alto volume diário), <strong>tamanho</strong> (valor de mercado acima de US$ 500 milhões) e <strong>foco fintech</strong>, com rebalanceamento semestral.</p>
+                        <p>A metodologia foca em <strong>liquidez</strong> (volume diário elevado), <strong>tamanho</strong> (valor de mercado acima de US$ 500 milhões) e <strong>foco fintech</strong>, com rebalanceamento semestral. A ponderação é por valor de mercado ajustado, com limite de 20% por empresa.</p>
+                        <p>O ETF é diversificado por subsetores: Pagamentos e Carteiras Digitais, Bancos Digitais e Crédito, Investimentos e Seguros, e Infraestrutura e B2B.</p>
                         <div className="charts">
                             <div className="chart-container pie-chart">
                                 <canvas id="sector-pie-chart"></canvas>
                             </div>
                         </div>
                         <h3>Empresas por Setor</h3>
-                        <p>Abaixo está a composição de algumas empresas candidatas a serem incluídas no ETF:</p>
+                        <p>Abaixo está a composição de algumas empresas candidatas ao ETF:</p>
                         <table>
                             <thead>
                                 <tr>
@@ -410,6 +414,7 @@
                     <div className="container">
                         <h2>Potencial de Crescimento Explosivo</h2>
                         <p>O ETF Fintech Brasil captura o crescimento do setor, com captação inicial estimada entre <strong>R$ 50 e R$ 100 milhões</strong>, viável pelo histórico da Investo (R$ 200M em 12 ETFs em 1 ano) (<a href="https://startups.com.br/negocios/investo-capta-r-40-milhoes-para-popularizar-etfs-no-brasil/">Startups</a>). O setor fintech brasileiro crescerá a um <strong>CAGR de ~15% até 2028</strong>, 3x mais rápido que bancos tradicionais, com receitas globais projetadas em <strong>US$ 1,5 trilhão até 2030</strong> (<a href="https://www.mckinsey.com.br/our-insights/all-insights/fintechs-deverao-crescer-dois-digitos-ao-ano-ate-2028">McKinsey</a>).</p>
+                        <p>Entre 2014 e 2023, as fintechs brasileiras atraíram <strong>US$ 10,4 bilhões</strong>, com pico de <strong>US$ 5,7 bilhões em 2021</strong>. Comparado ao <strong>Global X FinTech ETF (FINX)</strong>, que subiu <strong>+118% desde 2016</strong>, o ETF Fintech Brasil oferece exposição a um mercado em ascensão.</p>
                         <div className="charts">
                             <div className="chart-container large-chart">
                                 <canvas id="performance-chart"></canvas>
@@ -422,8 +427,20 @@
                             <strong>Desempenho:</strong> Este gráfico compara o desempenho hipotético do ETF Fintech Brasil com o Ibovespa desde 2018. Para o ETF, assumimos um crescimento anualizado de 15%, baseado no potencial de crescimento do setor fintech (projetado por fontes como McKinsey). Isso significa que, começando em 100 em 2018, o valor cresce 15% ao ano (ex.: 100 × 1,15 = 115 em 2019, 115 × 1,15 = 132,25 em 2020, e assim por diante). Para o Ibovespa, usamos dados históricos reais aproximados. Os valores foram normalizados para 100 em 2018 em favor da comparação visual.
                         </p>
                         <p style={{ textAlign: 'left', marginTop: '10px' }}>
-                            <strong>Explicação do Gráfico de Crescimento:</strong> Este gráfico projeta a receita global do setor fintech de 2023 a 2030, com base em um CAGR (taxa de crescimento anual composta) de ~15%, conforme estudo da McKinsey. Começando em US$ 0,32 trilhão em 2023, a receita cresce anualmente (ex.: 0,32 × 1,15 = 0,368 em 2024, 0,368 × 1,15 = 0,423 em 2025, etc.), atingindo US$ 1,5 trilhão em 2030. Os valores são estimativas baseadas em tendências atuais e podem variar.
+                            <strong>Explicação do Gráfico de Crescimento:</strong> Este gráfico projeta a receita global do setor fintech de 2023 a 2030, com base em um CAGR de ~15%, conforme estudo da McKinsey. Começando em US$ 0,32 trilhão em 2023, a receita cresce anualmente (ex.: 0,32 × 1,15 = 0,368 em 2024), atingindo US$ 1,5 trilhão em 2030.
                         </p>
+                    </div>
+                </section>
+            );
+        }
+
+        function RegulationImpact() {
+            return (
+                <section id="regulation-impact" className="section-dark animate-fadeInUp">
+                    <div className="container">
+                        <h2>Regulação e Impacto Econômico</h2>
+                        <p>O Banco Central criou um ambiente pró-inovação com medidas como regulação de fintechs de crédito, Pix e Open Finance, aumentando a concorrência e a inclusão financeira.</p>
+                        <p>A bancarização subiu de <strong>57% para 86%</strong>, incluindo <strong>75 milhões de brasileiros</strong>. As fintechs geram empregos, pagam impostos e desafiam os bancos tradicionais, reduzindo a concentração de crédito de <strong>81,8% para 81,4%</strong> entre 2020 e 2022.</p>
                     </div>
                 </section>
             );
@@ -445,10 +462,125 @@
             return (
                 <footer className="section-light">
                     <div className="container">
-                        <p><strong>Referências:</strong> <a href="https://www.anbima.com.br">ANBIMA</a>, <a href="https://epocanegocios.globo.com">Época Negócios</a>, <a href="https://startups.com.br">Startups</a>, <a href="https://finsidersbrasil.com.br">Finsiders</a>, <a href="https://www.mckinsey.com.br">McKinsey</a>.</p>
+                        <p><strong>Referências:</strong> <a href="https://www.anbima.com.br">ANBIMA</a>, <a href="https://epocanegocios.globo.com">Época Negócios</a>, <a href="https://startups.com.br">Startups</a>, <a href="https://finsidersbrasil.com.br">Finsiders</a>, <a href="https://www.mckinsey.com.br">McKinsey</a>, <a href="https://a16z.com">Andreessen Horowitz</a>.</p>
                         <p><strong>Disclaimer:</strong> Investimentos envolvem riscos. Resultados passados não garantem ganhos futuros.</p>
                     </div>
                 </footer>
+            );
+        }
+
+        // Novas seções adicionadas com base no pesquisa-etf.txt
+        function TrendsInFintech() {
+            return (
+                <section id="trends-in-fintech" className="section-light animate-fadeInUp">
+                    <div className="container">
+                        <h2>Tendências no Setor Fintech</h2>
+                        <p>O setor fintech brasileiro está em transformação, com uma clara migração de modelos B2C para B2B. Atualmente, <strong>56% das fintechs</strong> focam exclusivamente em empresas, ante 40% no ano anterior, buscando maior rentabilidade. Áreas como <strong>pagamentos digitais</strong>, lideradas pelo <strong>Pix</strong> (42 bilhões de transações em 2023 e 39% dos pagamentos no país), crédito online e infraestrutura tecnológica estão na vanguarda da inovação.</p>
+                        <p>Tendências globais como <strong>embedded finance</strong>, que deve movimentar <strong>US$ 320 bilhões até 2030</strong>, e o uso de <strong>Inteligência Artificial generativa</strong> para análise de dados e atendimento, também ganham força no Brasil, consolidando o país como líder em soluções financeiras inovadoras.</p>
+                    </div>
+                </section>
+            );
+        }
+
+        function EconomicImpact() {
+            return (
+                <section id="economic-impact" className="section-dark animate-fadeInUp">
+                    <h3>Informações Complementares de Mercado</h3>
+                    <p>
+                        Um estudo mapeou <strong>1505 fintechs</strong> no Brasil (das quais <strong>447 são consideradas “locais”</strong>), distribuídas em segmentos como pagamentos, crédito, investimentos, regtech, seguro e bancos digitais. Além disso, as fintechs já representam o maior e mais financiado setor de startups no país, com cerca de <strong>1.476 das 13.365 startups ativas em 2023</strong>, ou <strong>11% do total</strong>.
+                    </p>
+                    <p>
+                        Em âmbito global, estima-se que haja quase <strong>30 mil fintechs no mundo em 2024</strong>, e a América Latina é o <strong>4º maior mercado, com cerca de 4,7 mil</strong>. Isso reforça a relevância do ecossistema brasileiro, que se posiciona como líder regional e sétimo colocado mundial no setor.
+                    </p>
+                </section>
+            );
+        }
+
+        function InvestmentsInFintech() {
+            return (
+                <section id="investments-in-fintech" className="section-light animate-fadeInUp">
+                    <div className="container">
+                        <h3>IA Generativa no Radar</h3>
+                        <p>
+                            Além das tendências de pagamentos digitais, crédito online e bancos digitais, as fintechs e instituições financeiras tradicionais vêm estudando a aplicação de <strong>Inteligência Artificial (IA) generativa</strong> para aprimorar atendimento ao cliente, análise de dados e marketing. Esse movimento pode potencializar ainda mais a inovação no setor nos próximos anos.
+                        </p>
+
+                        <h3>Mais sobre Regulação e Concorrência</h3>
+                        <p>
+                            Desde 2013, o Banco Central criou modalidades específicas de instituições de pagamento, além de regulamentar as fintechs de crédito (Res. 4.656/2018) para permitir peer-to-peer lending e Sociedades de Crédito Direto. Com isso, houve incremento na oferta de empréstimos pessoais e para PMEs, contribuindo para redução de spreads, segundo o FMI.
+                        </p>
+                        <p>
+                            Embora os cinco maiores bancos ainda detenham cerca de <strong>81,4%</strong> do crédito, incluindo novas instituições não bancárias e fintechs a concentração cai para <strong>~68%</strong>, indicando que novos entrantes vêm conquistando cada vez mais espaço.
+                        </p>
+                        <p>
+                            No macro, essas empresas impulsionam inclusão financeira e eficiência. Por exemplo, <strong>5,7 milhões</strong> de brasileiros conseguiram acesso a crédito pelo Nubank em apenas um ano. Já o <strong>Pix</strong> movimentou <strong>R$ 17,2 trilhões em 2023</strong> e chegou a <strong>R$ 26,5 trilhões em 2024</strong>, fortalecendo o fluxo de transações e a digitalização da economia.
+                        </p>
+                        <p>
+                            O sucesso de algumas fintechs gerou unicórnios, trazendo valor econômico considerável. Em 2021, o <strong>Nubank</strong> fez IPO avaliado em mais de <strong>US$ 50 bilhões</strong>, tornando-se então o banco mais valioso da América Latina, embora o mercado tenha passado por volatilidade desde então.
+                        </p>
+
+                        <h3>Investimentos Recentes</h3>
+                        <p>
+                            Em 2022, os aportes em fintechs no Brasil registraram correção de cerca de <strong>44%</strong>, caindo para <strong>US$ 2,3 bilhões</strong>, após recordes em 2021. Mesmo assim, o setor segue como o principal destino de venture capital no país, com retomada de <strong>+75%</strong> no 1º semestre de 2024 em relação ao mesmo período do ano anterior.
+                        </p>
+                    </div>
+                </section>
+            );
+        }
+
+        function RegulatoryEnvironment() {
+            return (
+                <section id="regulatory-environment" className="section-dark animate-fadeInUp">
+                    <div className="container">
+                        <h2>Ambiente Regulatório</h2>
+                        <h3>Métricas-Chave de ETFs de Fintech</h3>
+                        <ul>
+                            <li><strong>Crescimento de Receita e Lucro</strong>: Fintechs ainda estão em estágio de alto crescimento, com estimativas de +14% a +15% ao ano. Espera-se que um ETF temático capture esse crescimento superior.</li>
+                            <li><strong>Valuation</strong>: Muitas fintechs abriram capital recentemente e negociam com múltiplos P/L elevados ou lucro reduzido, mas após correções recentes, as avaliações ficaram mais atraentes.</li>
+                            <li><strong>Ativos sob Gestão (AUM) e Liquidez</strong>: O sucesso de um ETF depende também da liquidez das cotas e do volume captado. Nos EUA, o ETF FINX alcançou ~US$ 287 milhões em AUM, e no Brasil já há ETFs com ~R$ 200 milhões a R$ 1 bilhão em poucos anos.</li>
+                            <li><strong>Desempenho vs. Benchmarks</strong>: Investidores tendem a comparar ETFs temáticos com índices gerais de ações ou setor financeiro. A expectativa é de que fintech supere bancos tradicionais em crescimento no longo prazo.</li>
+                            <li><strong>Volatilidade</strong>: Setores de tecnologia têm maior oscilações; fintech pode apresentar beta &gt; 1, mas com potencial de retorno elevado.</li>
+                            <li><strong>Taxa de Administração e Liquidez Diária</strong>: ETFs de fintech normalmente cobram em torno de 0,5% a 0,7% a.a. Justificar a especialização e assegurar fácil negociação é vital.</li>
+                        </ul>
+
+                        <h3>Composição Ampliada do ETF</h3>
+                        <p>
+                            Além das companhias já citadas (Nubank, PagSeguro, StoneCo, Banco Inter, XP, MercadoLibre e Totvs), o ETF pode incluir:
+                        </p>
+                        <ul>
+                            <li><strong>Sinqia</strong>: Fornecedora de softwares para bancos e fintechs, diretamente ligada à expansão tecnológica financeira.</li>
+                            <li><strong>Fiserv ou FIS</strong>: Gigantes globais de tecnologia bancária presentes no Brasil, habilitando processamento e serviços para instituições financeiras.</li>
+                            <li><strong>SoFi ou Affirm</strong>: Fintechs americanas focadas em empréstimos e BNPL (Buy Now, Pay Later), trazendo diversificação e exposição a outros mercados.</li>
+                            <li><strong>Block (Square)</strong>: Forte em pagamentos móveis e soluções para PMEs (e-commerce, cartão, aplicativo de pagamentos), ampliando a tese de fintech global.</li>
+                            <li><strong>Adyen</strong>: Especialista em pagamentos omnichannel, atendendo grandes varejistas no Brasil e mundo afora.</li>
+                        </ul>
+                        <p>
+                            A ideia é equilibrar liquidez, potencial de crescimento e diversificação setorial, reforçando a atratividade do ETF para investidores em busca de uma “fotografia” completa do mercado de tecnologia financeira.
+                        </p>
+                    </div>
+                </section>
+            );
+        }
+
+        function GlobalContext() {
+            return (
+                <section id="global-context" className="section-light animate-fadeInUp">
+                    <div className="container">
+                        <h3>Viabilidade Financeira e Cenários</h3>
+                        <p>
+                            Mesmo em meio a ajustes de mercado, o setor fintech brasileiro continua crescendo: as <strong>receitas das fintechs podem crescer quase 3x mais rápido que as de bancos tradicionais</strong>, segundo relatórios como o da McKinsey.
+                        </p>
+                        <p>
+                            Uma projeção simples sugere que, caso as empresas mantenham um crescimento de lucros de 20% ao ano nos próximos 5 anos, o valor agregado poderia dobrar em relação ao nível atual, assumindo um múltiplo P/L moderado. Embora existam riscos de concorrência e regulação, a diversificação do ETF ajuda a mitigar problemas de empresas específicas, gerando maior estabilidade para o cotista.
+                        </p>
+                        <p>
+                            Do ponto de vista operacional, montar o ETF é viável com ações nacionais e BDRs, respeitando critérios de liquidez. A taxa de administração, em torno de <strong>0,5% a 0,7% ao ano</strong>, deve cobrir custos e remunerar a gestora, mantendo-se atrativa para investidores que desejam exposição temática.
+                        </p>
+                        <p>
+                            Em síntese, investir em um ETF focado em fintech no Brasil é apostar na modernização financeira do país, um movimento que tende a se acelerar com a consolidação do Pix, Open Finance e a adoção de IA generativa, criando oportunidades de crescimento significativas nos próximos anos.
+                        </p>
+                    </div>
+                </section>
             );
         }
 
@@ -459,6 +591,13 @@
                     <MarketOpportunity />
                     <ETFComposition />
                     <FinancialViability />
+                    <RegulationImpact />
+                    {/* Novas seções adicionadas aqui */}
+                    <TrendsInFintech />
+                    <EconomicImpact />
+                    <InvestmentsInFintech />
+                    <RegulatoryEnvironment />
+                    <GlobalContext />
                     <CTA />
                     <Footer />
                 </div>
@@ -519,7 +658,7 @@
                         legend: {
                             position: 'bottom',
                             labels: {
-                                fontColor: 'white' // Cor da legenda alterada para branco
+                                fontColor: 'white'
                             }
                         }
                     }
@@ -556,6 +695,7 @@
             });
         };
     </script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'91eb419a58fcbfe2',t:'MTc0MTY5ODI1MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
 </body>
 
 </html>
